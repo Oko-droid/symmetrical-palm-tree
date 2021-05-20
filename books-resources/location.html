@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Location</title>
+    <style>
+        section div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .logo{
+        margin-bottom: 17px;
+        z-index: 4;
+        height: 30px;
+        position: relative;
+        left: -40.3vw;
+        top: -8px;
+        margin-left: -2px;
+    }
+    section div img{
+        top: 20vh;
+        left: 50vw;
+        height: 80vh;
+        width: 50vw;
+        padding-top: 10vh;
+    }
+    ul{
+        font-size: 2rem;
+    }
+
+    /* @media(max-width: 320px){
+        section div img{
+            height: 50vh;
+            width: 50vw; 
+            {
+    } */
+
+    /* @media(max-width: 500px){
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        section div img{
+            height: 50vh;
+            width: 60vw; 
+            
+    }
+} */
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+             <a href="#" class="logo"><img src="./img_assets/source.gif" alt="img" height="60px" width="90px" class="inverted"></a>
+            <a href="index.html" class="logo"><img src="./img_assets/kisspng-computer-icons-user-profile-clip-art-person-icon-user-person-man-icon-5ab04a2c1dfa10.0741935615215027641228.png" alt="img" height="65px" width="80px" ></a>
+           
+        </nav>
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+            <img src="./img_assets/kisspng-gps-navigation-device-gps-tracking-unit-vehicle-tr-green-map-red-location-mark-5a82617a638093.5908650315184940744076.png" alt="img">
+            <ul>
+                <li>Am Located in the City of Jos, Nigeria </li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

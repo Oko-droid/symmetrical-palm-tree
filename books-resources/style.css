@@ -1,0 +1,828 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    text-decoration-line: none;
+    
+}
+.dark-mode{
+    filter: invert(1) hue-rotate(180deg);
+}
+.invert{
+    filter: invert(1) hue-rotate(180deg);
+}
+*::-webkit-scrollbar{
+    width: .7rem;
+}
+*::-webkit-scrollbar-track{
+ -webkit-box-shadow: inset 0 0 6px ;
+}
+*::-webkit-scrollbar-thumb{
+ background-color: rgb(12, 184, 214);
+ border-radius: 25px;
+}
+body{
+    overflow-x: hidden;
+    font-family: poppins;
+}
+nav{
+    background-color:  white;
+    background: linear-gradient(to left,  rgba(255, 255, 255, 2.5), rgba(255, 255, 255,0.6));
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 9;
+}
+nav .logo{
+    font-size: 2rem;
+}
+.open{
+    cursor: pointer;
+    position: absolute;
+    right: 5vw;
+    font-size: 2.2rem;
+    list-style: none;
+    font-weight: 900;
+    display: none;
+}
+.close{
+    font-size: 2.2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 2vw;
+    list-style: none;
+    font-weight: 900;
+    display: none;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    margin-left: 40px;
+}
+.menu li{
+    margin: 7px;
+    padding: 5px;
+    padding-left: 5px;
+    border: 1px solid  black;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+.menu li:hover{
+    background: #6cbdeb;
+    transition:  ease-in 0.4s;  
+}
+.menu li:active{
+    background: #6cbdeb;
+      
+}
+.menu li a:hover{
+    color: white;
+}
+.logo{
+    margin-bottom: 17px;
+    z-index: 4;
+    height: 30px;
+    position: relative;
+    left: -10vw;
+    top: -8px;
+}
+.logo:nth-child(2){
+    
+    
+}
+.menu li a{
+    color: black;
+    padding: 10px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+main{
+    min-height: 100vh;
+    background: linear-gradient(to left top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_glass{
+    margin-top: 100px;
+    background-color: white;
+    min-height: 75vh;
+    width: 60%;
+    background: linear-gradient(to left bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255,0.3));
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(15rem);
+}
+main .main_glass img{
+    position: absolute;
+    top: 2.2vh;
+    right: 1.7vw;
+    border-radius: 20px;
+    z-index: 2.8;
+    
+}
+.main_glass div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    font-size: 2rem;
+    align-self: center;
+    top: 35vh;
+    left: 25px;
+    line-height: 75px;
+    z-index: 3;
+}
+.main_glass .three_divs {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-evenly;
+    left: 1px;
+    height: 30vh;
+    width: 30vw;  
+    z-index: 3;
+}
+.main_glass .three_divs li{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-align: center;
+    top: 10px;
+    left: -2vw;
+    margin-left: -8vw;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row-reverse;
+    
+}
+.main_glass .three_divs li:nth-child(1){
+    background-color: rgb(243, 3, 3);
+    padding: 3px;
+    border-radius: 50%;
+    color: rgb(243, 3, 3);
+}
+.main_glass .three_divs li:nth-child(2){
+    background-color: rgb(240, 240, 6);
+    padding: 3px;
+    border-radius: 50%;
+    color: rgb(240, 240, 6);
+}
+.main_glass .three_divs li:nth-child(3){
+    background-color: rgb(7, 107, 7);
+    padding: 3px;
+    border-radius: 50%;
+    color:  rgb(7, 107, 7);
+}
+.main_glass .three_divs li:nth-child(1):hover{
+    color: black;
+    transition:  ease-in 0.1ms;
+    font-weight: 900;
+    font-weight: bold;
+}
+.main_glass .three_divs li:nth-child(2):hover{
+    color: black;
+    transition:  ease-in 0.1ms;
+    font-weight: 900;
+    font-weight: bold;
+}
+.main_glass .three_divs li:nth-child(3):hover{
+    color: black;
+    transition:  ease-in 0.1ms;
+    font-weight: 900;
+    font-weight: bold;
+}
+.circle1, .circle2{
+    background: white;
+    background: linear-gradient(to left bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, -1));
+    height: 18rem;
+    width: 18rem;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0.8;
+}
+.main_glass div img{
+    height: 80px;
+    width: auto;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.445);
+}
+.circle1{
+    bottom: 5%;
+    right: 10%;
+    z-index: 0;
+}
+.circle2{
+    top: 2%;
+    left: 12%; 
+    z-index: 0;
+}
+.about_music{
+    height: 100vh;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.about_music h2{
+    font-family: monospace;
+    position: relative;
+    font-size: 3rem;
+    bottom: 150px;
+    left: 50vw;
+    display: inline-block;
+    z-index: 3;
+}
+.about_music .box_container{
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.about_music .box_container .text_box strong{
+    font-size: 1.7rem;
+}
+.about_music .text_box .speaker{
+    position: absolute;
+    top: 145%;
+    right: 11px;
+    z-index: 0;
+}
+.box_container .text_box{
+    margin-left: 30px;
+    display: block;
+    z-index: 3;
+}
+.box_container .text_box h2{
+    font-size: 1.8rem;
+    
+}
+.box_container .text_box ul li{
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+}
+.about_music h2{
+    position: relative;
+    top: -40vh;
+    padding: 32px;
+}
+.box_container .text_box strong{
+    margin-top: 12vh;
+    padding: 12px;
+}
+.box_container .text_box h2, p{
+    margin-bottom: 42px;
+    font-size: 1.6rem;
+    font-family: cursive;
+    padding: 15px;
+    line-height: 5px;
+}
+.box_container .text_box .my_songs{
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+}
+.box_container .music_box{
+    padding-top: 22px;
+    margin-left: -30vw;
+    
+}
+.box_container .music_box img{
+    border-radius: 30%;
+     object-fit: contain;
+     float: left;
+     border-bottom-left-radius: 10%;
+     border-bottom-right-radius: 10%;
+     border-top-right-radius: 0;
+     border-top-left-radius: 0;
+     /* margin-right: 15vw; */
+}
+
+/* contact info */
+.contact{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    border-top: 1px solid gray;
+    padding-top: 30px;
+    border-bottom: 1px solid gray;
+    margin-left: 5px auto;
+    padding-bottom: 40px;
+}
+.contact .heading{
+    font-family: fantasy;
+    width: 60%;
+    padding-top: 2vh;
+    padding-bottom: 15px;
+    z-index: 3;
+}
+.contact .heading strong{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.heading p{
+    font-size: 2.2rem;
+}
+.contact .circle11, .circle22{
+    z-index: -1;
+}
+/* the form */
+.the_form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1px;
+}
+.the_form form input{
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 25vw;
+    height: 8vh;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 1.2rem;
+    margin: 12px;
+    z-index: 3;
+}
+.the_form form textarea{
+    border-radius: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    z-index: 4;
+    
+}
+
+.the_form form div:last-child input{
+    width: 20vw;
+    background: rgb(24, 23, 23);
+    color: white;
+    z-index: 5;
+}
+/* booking */
+.bookings{
+    font-family: monospace;
+    background: linear-gradient(to right,  rgba(255, 255, 255, 2), rgba(49, 171, 201, 0.404));
+    padding-top: 40px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.2rem;
+    font-size: 1.5rem;
+}
+.bookings h2{
+    font-size: 1.7rem;
+}
+.bookings h3{
+    font-size: 1.75rem;
+}
+.bookings .phone_no a{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: block;
+    font-size: 1.8rem;
+    
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right,  rgba(255, 255, 255, 2), rgba(49, 171, 201, 0.404));
+    padding: 10px;
+    margin-top: 10px;
+    border-top: 1px solid rgb(207, 201, 201);
+    color:black;
+}
+footer span{
+    font-size: 1.3rem;
+}
+.footer_social{
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_social a{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(27, 26, 26);
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+footer .footer_social img{
+    position: absolute;
+}
+.footer_social a:hover{
+    background-color: #6cbdeb;
+    transition: all ease 0.5s;
+}
+::selection{
+    color: goldenrod;
+    background-color: chocolate;
+}
+.about_music,
+.contact{
+    padding-top: 60px;
+}
+.menu_icon,
+.menu_btn{
+    display: none;
+}
+
+@media(max-width: 398px){
+    main nav{
+        top: -40%; 
+        transition: all ease-in-out .5s;
+    }
+    .menu{
+        display: block;
+        
+    }
+    .close{
+        position: fixed;
+    }
+    #check:checked ~ nav{
+        top: 40%;
+    }
+    .menu li:nth-child(1){
+        width: 29vw;
+        padding: 5px;
+        text-align: center;
+    }
+    .menu li:nth-child(2){
+        width: 29vw;
+        padding: 5px;
+        text-align: center;
+    }
+}
+@media(min-width: 399px) and (max-width: 499px){
+    .menu li{
+        margin-top: 18px;
+        padding: 5px;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .open{
+        right: 5vw;
+        display: block;
+    }
+    .close{
+        position: fixed;
+        top: -3vh;
+        right: 2vw;
+        display: block;
+    }
+    .menu li:nth-child(1){
+        width: 26vw;
+        padding: 5px;
+    }
+    .menu li:nth-child(2){
+        width: 26vw;
+        padding: 5px;
+    }
+    main nav .logo{
+        left: -12px;
+        
+    }
+    main .main_glass{
+        position: relative;
+        top: -80px;
+        
+    }
+    main .main_glass img{
+        position: absolute;
+        top: -13vh;
+        width: 85%;
+        left: 25px;
+        
+    }
+    nav{
+       
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: column;
+        /* padding: 5px 40px; */
+    }
+    .main_glass .three_divs{
+        display: none;
+    }
+    .bookings h2{
+        font-size: 1.1rem;
+    }
+    .bookings h3{
+        font-size: 1.2rem;
+    }
+    .contact .heading strong{
+        padding-top: 15vh;
+        top: 18vh;
+    }
+    footer .footer_social a{
+        width: 45px;
+        
+    }
+   
+}
+
+
+@media(max-width: 500px){
+    
+    main nav .logo{
+        left: 12px;
+        
+    }
+    nav .menu_btn:checked ~ .menu{
+        display: block;
+    }
+    nav .menu_icon::before,
+    nav .menu_icon::after{
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all ease-out 0.2s;
+        width: 100%;
+    } 
+    .open{
+        right: 5vw;
+        display: block;
+    }
+    .close{
+        position: fixed;
+        top: 1vh;
+        right: 3vw;
+        display: block;
+    }
+    .menu_icon{
+        display: block;
+       
+    }
+    nav .menu_icon {
+        float: right;
+        cursor: pointer;
+        padding: 3px;
+        position: relative;
+        user-select: none;
+        z-index: 2;
+    }
+    nav .menu_icon .nav_icon{
+        background-color: white;
+        display: block;
+        position: relative;
+        height: 2px;
+        transition: background 0.2s ease-out;
+        width: 25px;
+    }
+    main{
+        z-index: 0;
+    }
+    
+    .main_glass{
+        min-height: 62vh;
+        width: 80%;
+        margin-top: 34vh;
+        z-index: 3;
+        border-radius: 0px;
+    }
+    .main_glass img{
+        position: absolute;
+        height: 350px;
+        width: 77%;
+        padding-left: -2vw;
+        margin-top: 1vh;
+    }
+    .main_glass div{
+        top: 15vh;
+        font-size: 1.4rem;
+        
+    }
+    .main_glass div h3{
+        position: absolute;
+        top: 17vh;
+        left: 30vw;
+    }
+    .main_glass div img{
+        left: 40vw;
+        display: none;
+        top: 10vh;
+    }
+    .main_glass .three_divs{
+        display: none;
+    }
+    .about_music{
+        padding-top: 190px;
+    }
+    .about_music .box_container .text_box .my_songs{
+        margin-left: -25vw;
+        margin-top: 30vh;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+     .hh2{
+        font-size: 1.8rem;
+    }
+    .about_music .box_container .text_box strong{
+        padding-top: 90px;
+        top: 120vh;
+        font-size: 1.3rem;
+    }
+    .about_music .box_container .text_box ul .hh3{
+        position: relative;
+       
+    }
+    .download{
+        margin-left: -32px;
+        font-size: 1.1rem;
+    }
+    /* the form */
+    .contact .the_form form div input{
+        width: 70vw;
+    }
+    .contact .heading p{
+        display: none;
+    }
+    .the_form form div:last-child input{
+        width: 30vw;
+        
+    }
+    .the_form form textarea{
+        border-radius: 0px;
+        width: 70vw;
+    }
+    /* booking*/
+    .bookings h2{
+        font-size: 1.3rem;
+    }
+    .bookings h3{
+        font-size: 1.5rem;
+    }
+    /* footer */
+    footer .footer_social{
+        padding-left: 12px;
+    }
+    footer .footer_social a{
+        width: 33px;
+        
+    }
+}
+@media(max-width: 682px){
+    .menu li{
+        margin-top: 18px;
+        padding: 4px 18px;
+        text-align: center;
+    }
+    .open{
+        right: 5vw;
+        display: block;
+    }
+    .close{
+        position: fixed;
+        top: 1vh;
+        right: 3vw;
+        display: block;
+    }
+}
+
+@media(max-width: 768px){
+    main nav .logo{
+        left: -1px;
+        
+    }
+    
+    .main_glass{
+        width: 80%;
+    }
+    .main_glass img{
+        position: absolute;
+        left: 15vw;
+       
+    }
+    .about_music{
+        
+        display: flex;
+        height: 100vh;
+        
+    } 
+    .about_music h2{
+        margin-top: -30vh;
+        padding-top: -32px;
+        left: 30%;
+    }
+    .main_glass .three_divs{
+        display: none;
+    }
+    .three_divs ul{
+        display: none;
+    }
+    .box_container .music_box{
+        padding-top: 30vh;
+        margin-left: -5vw;
+    } 
+    .about_music .box_container strong{
+        position: relative;
+        top: 18vh; 
+    }
+    .about_music .box_container strong, p{
+        left: 20px;
+        position: absolute;
+        top: 15vh;
+    }
+    .about_music .hh2{
+        left: 0;
+        top: -28vh;
+        font-size: 1.8rem;
+    }
+    .about_music .box_container .text_box strong, h3 p{
+        top: 105vh;
+    } 
+    .about_music .box_container .speaker img{
+        margin-top: 20vh;
+        height: 35vh;
+        width: 30vw;
+    }
+    .about_music .box_container .music_box img{
+       display: none;
+    }
+    .about_music .box_container .text_box .my_songs{
+        margin-left: -15vw;
+        margin-top: 30vh;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .about_music .box_container .text_box ul{
+        font-size: 1.4rem;
+        line-height: 1.80rem;
+    }
+    .about_music .box_container .text_box ul, .hh3, .locate{
+        position: relative;
+        right: 15vw;
+    }
+    
+    }
+    .download{
+        margin-left: -152px;
+        font-size: 1.1rem;
+    }
+    /* the form */
+    .contact{
+        height: 100vh;
+    }
+    .contact .heading strong{
+        position: relative;
+        top: -8vh;
+    }
+    .contact .heading p{
+       display: none;
+    }
+    .contact .the_form form div input{
+        width: 70vw;
+    }
+    .the_form form div:last-child input{
+        width: 30vw;
+        
+    }
+    .the_form form textarea{
+        border-radius: 0px;
+        width: 70vw;
+    }
+    .bookings h2{
+        font-size: 1.4rem;
+    }
+    .bookings h3{
+        font-size: 1.6rem;
+    }
+}
