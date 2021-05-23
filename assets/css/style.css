@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: rgb(94, 52, 209);
+  background: rgb(42, 39, 224);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background:  rgb(114, 78, 214);
+  background: rgb(42, 39, 224);
   color: #fff;
 }
 
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background-color: rgb(100, 7, 221);
+  background: rgb(42, 39, 224);
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
