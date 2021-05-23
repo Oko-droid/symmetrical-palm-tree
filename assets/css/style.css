@@ -1,7 +1,6 @@
 /**
-* Template Name: Sailor - v4.2.0
 * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-* Author: BootstrapMade.com
+* Author: okoson peterson
 */
 
 /*--------------------------------------------------------------
@@ -924,9 +923,9 @@ section {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
+.portfolio-details .portfolio-description h4 {
+  font-size: 15px;
+  font-weight: 300;
   margin-bottom: 20px;
 }
 
