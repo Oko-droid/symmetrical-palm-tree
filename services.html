@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -82,28 +84,36 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-md-6">
+          <div data-aos="fade-down"
+          data-aos-anchor-placement="center-bottom" class="col-md-6">
             <div class="icon-box">
               <i class=""></i><img src="./assets/img/portfolio/book_with_bookmark_311388.jpg" alt="" height="40px;" width="40px;"></i>
               <h4><a href="adds.html">Extra Lessions</a></h4>
               <p>We take Junior and Senior Secondary School Students lessions on all Subjects</p>
             </div>
           </div>
-          <div class="col-md-6 mt-4 mt-md-0">
+          <div data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom" class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box">
               <img src="./assets/img/portfolio/icons8-monitor-64.png" alt="">
               <h4><a href="assets\img\kisspng-graphic-design-designer-top-view-5a6dbd0bc09174.1699633715171412597888.png">Computer Training</a></h4>
               <p>We Train People in Excel, Internet, PowerPoint, MS Word, Corel Draw, Web Design (UX/UI).</p>
             </div>
           </div>
-          <div class="col-md-6 mt-4 mt-md-0">
+          <div data-aos="fade-right"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="400" class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="bi bi-bar-chart"></i>
               <h4><a href="#">Project</a></h4>
               <p>Project research and Project typing</p>
             </div>
           </div>
-          <div class="col-md-6 mt-4 mt-md-0">
+          <div data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="400" class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="bi bi-binoculars"></i>
               <h4><a href="#">Consultation</a></h4>
@@ -157,7 +167,7 @@
                     <p class="fst-italic">12:00pm - 02:00pm</p> -->
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets\img\kisspng-viamso-srl-dance-sport-potaissa-turda-microsoft-of-conference-room-reservation-5b280853aedbf9.5169928515293502277162.png" alt="" class="img-fluid">
+                    <img data-aos="fade-down-right" src="assets\img\kisspng-viamso-srl-dance-sport-potaissa-turda-microsoft-of-conference-room-reservation-5b280853aedbf9.5169928515293502277162.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -278,6 +288,9 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
