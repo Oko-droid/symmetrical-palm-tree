@@ -104,6 +104,7 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Mail Us Directly:</h4>
+                <p>With the keywords, "I would like to get newsletters and info from this email"</p>
                 <p><a href="http://radontutors@gmail.com" target="blank">radontutors@gmail.com</a></p>
               </div>
 
@@ -118,6 +119,7 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
+            <h4>Student Form Input</h4>
 
             <form action="POST" method="POST" data-netlify="true">
               <div class="row">
@@ -130,8 +132,25 @@
               </div>
               <div class="form-group mt-3">
                 <input type="number" class="form-control" name="number" id="subject" placeholder="Phone No:" required>
+              </div><br>
+              <label for="email">Gender</label>
+              <div class="form-group mt-3">
+                <label for="male">Male</label>
+                <input type="radio"  name="gender" id="male" required>
+              
+                <label for="female">Female</label>
+                <input type="radio"  name="gender" id="female" required>
               </div>
               
+              <div class="form-group mt-3">
+                <label for="Decipline" required>Decipline</label>  
+                <select name="select" required>
+                  <option value="Science" required>Science</option>
+                  <option value="Social Science" required>Social Science</option>
+                  <option value="Art" required>Art</option>
+                  <option value="Art" required>Far from school activities</option>
+                </select>
+              </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Reasons For Contacting Us" required></textarea>
               </div>
