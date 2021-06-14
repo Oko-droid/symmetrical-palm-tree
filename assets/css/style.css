@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background-color: rgb(197, 48, 48);
+  background-color: rgb(216, 96, 96);
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
@@ -476,7 +476,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 14px 32px;
+  padding: 14px 30px;
   border-radius: 4px;
   transition: 0.5s;
   line-height: 1;
@@ -486,9 +486,18 @@ h1, h2, h3, h4, h5, h6 {
   background: rgb(235, 196, 145);  
 }
 
+#hero .container .btn-get-started a:nth-child(2){
+  padding: 0 20px;
+}
+
+#hero .container a:nth-child(2){
+  /* position: relative; */
+  margin: 15px;
+}
+
 #hero .btn-get-started:hover {
   /* background: #df3740; */
-  background: rgb(196, 66, 57);
+  background: rgb(199, 125, 120);
   color: rgb(248, 248, 248);
 }
 
@@ -504,6 +513,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   #hero h2 {
     font-size: 28px;
+  }
+  .heroCarousel{
+    display: flex;
+    flex-direction: column;
+  }
+  #hero .container a:nth-child(2){
+    /* position: relative; */
+    margin: 15px;
   }
 }
 
