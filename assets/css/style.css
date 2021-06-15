@@ -290,18 +290,19 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   padding: 0px 0;
   padding-top: 60px;
-  background: rgba(77, 77, 175, 0.897);
+  background: rgba(243, 243, 243, 0.897);
   overflow-y: auto;
   transition: 0.3s;
   backdrop-filter: blur(1.6rem);
   border-radius: 10px;
+  color: black;
 }
 
 .navbar-mobile a {
   padding: 30px 20px;
   /* padding-top: 50px; */
   font-size: 15px;
-  color: white;
+  color: black;
   
 }
 
@@ -487,8 +488,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .container .anchor_2{
-  -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s;
+  
   background-color: #18d26e;
   color: white;
 }
@@ -530,8 +530,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 451px){
+  #hero .container .anchor_2{
+    -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+  }
+}
 @media (max-width: 400px){
   #hero .container .anchor_2{
+    -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
     width: 45vw;
     color: white;
   }
