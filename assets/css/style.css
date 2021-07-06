@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: rgb(56, 64, 182);
+  background: rgb(197, 150, 88);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background-color: rgb(216, 96, 96);
+  background-color: rgb(228, 106, 106);
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
@@ -85,7 +85,8 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 12px 0;
-  background-color: rgba(46, 7, 221, 0.973);
+  background-color: rgb(212, 174, 124);
+  color: rgba(46, 44, 44, 0.781);
 }
 
 #header.header-inner-pages {
@@ -184,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: rgb(102, 81, 219);
+  background: rgb(104, 89, 190);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -1468,7 +1469,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background-color: rgb(62, 43, 170);
+  background-color: rgba(15, 14, 15, 0.856);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1477,7 +1478,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
- background-color: rgb(62, 43, 170);
+ background-color: rgba(16, 16, 17, 0.801);
 }
 
 @-webkit-keyframes animate-loading {

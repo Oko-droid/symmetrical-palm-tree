@@ -118,7 +118,7 @@
 
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
+          <div id="reg-form" class="col-lg-8 mt-5 mt-lg-0">
             <h4>Student Form Input</h4>
 
             <form action="POST" method="POST" data-netlify="true">
@@ -143,8 +143,9 @@
               </div>
               
               <div class="form-group mt-3">
-                <label for="Decipline" required>Decipline</label>  
+                <!-- <label for="Decipline" required>Decipline</label>   -->
                 <select name="select" required>
+                  <option selected hidden required>Decipline</option>
                   <option value="Science" required>Science</option>
                   <option value="Social Science" required>Social Science</option>
                   <option value="Art" required>Art</option>
@@ -159,7 +160,7 @@
 
                 </div>
               </div>
-              <div class="text-center"><button type="submit" name="clicked" style="background-color: rgb(65, 19, 233); color: white; padding: 5px 10px;">Send Message</button></div>
+              <div class="text-center"><button type="submit" name="clicked" style="background-color: rgba(38, 38, 41, 0.89); color: white; padding: 5px 10px; border-radius: 3px;">Send Message</button></div>
             </form>
 
           </div>
