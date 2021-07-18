@@ -1,0 +1,116 @@
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Collect.js</title>
+    <script src="https://secure.transactiongateway.com/token/collect.js">
+                data-tokenization-key="your-key-goes-here"
+                data-variant="inline"
+                data-field-ccnumber-placeholder='0000 0000 0000 0000'
+                data-field-ccexp-placeholder= '10 / 22'
+                data-field-cvv-placeholder = '123'
+                data-custom-css='{
+                    "border-style" : "solid",
+                    "border-color" : "#c7c7c7",
+                    "border-width" : "1px",
+                }'
+    
+    </script>
+
+    <style>
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.sub-container{
+    padding: 10px 0;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+}
+.cec-submit{
+    padding: 10px 0;
+   position: relative;
+   /* left: 40vw; */
+   padding-left: 40vw;
+   width: 100vw;
+   background-color:  rgb(238, 215, 185);
+}
+.check-btn{
+    position: relative;
+    background-color: #18d26e;
+    padding: 8px 12px;
+    color: white;
+    font-size: 1.2rem;
+    top: 10px;
+}
+ .check-btn:hover{
+    background-color: white;
+    padding: 8px;
+    box-shadow: 12px;
+    /* color: white; */
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-item"><a href="#">Store</a></div>
+        <div class="nav-item active" aria-current="page">Checkout</div>
+    </div>
+
+    <div class="container">
+        <h2>
+            <span>Checking Out is Secure :</span>
+            <span> <del>$7.00</del> (₦3000) </span>
+        </h2>
+    <div class="sub-container">
+        <form action="receipt.php" method="POST" id="the-form">
+            <div class="input input-text half-width">
+                <span class="input-label">First name</span>
+                <input type="text" class="input-field" autofocus>
+            </div><br>
+            <div class="input input-text half-width">
+                <span class="input-label">Last name</span>
+                <input type="text" class="input-field" >
+            </div><br>
+            
+            <div class="input input-text half-width">
+                <span class="input-label">Your Email</span>
+                <input type="email" class="input-field" placeholder="name@gmail.com">
+            </div>
+            </div>
+            <div class="cec-submit">
+            <div class="input input-text half-width">
+                <span class="input-label">Card Number</span>
+                <div id="ccnumber"></div>
+            </div>
+            <div class="input input-text half-width">
+                <span class="input-label">expiration Date</span>
+                <div id="ccexp"></div>
+            </div>
+            <div class="input input-text half-width">
+                <span class="input-label">cvv</span>
+                <div id="cvv"></div>    
+            </div>
+            <div>
+
+                <input type="submit" class="btn btn-mega " id="payButton" value="submit payment">
+            </div>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
+
+
+
+
+ -->
